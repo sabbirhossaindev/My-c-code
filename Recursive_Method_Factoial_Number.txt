@@ -1,0 +1,31 @@
+using System;
+
+namespace Recursive_Method_Factoial_Number
+{
+    class Program
+    {
+        public int Factorial(int num)
+        {
+            if (num == 1)
+            {
+                return 1;
+            }
+            else {
+                return Factorial(num - 1) * num;
+            }
+        }
+        static void Main(string[] args)
+        {
+            int Number, F;
+            Console.WriteLine("Enter the value of Factorial : ");
+            Number = Convert.ToInt32(Console.ReadLine());
+
+            Program My_Fact = new Program();
+
+            F = My_Fact.Factorial(Number);
+            Console.WriteLine("Factoral of {0}! is :--> {1}",Number,F);
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,21 @@
+using System;
+
+namespace Array_Min_Value_Display
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] Array = new int[] { 7,5,55,25,58,86,85,69,58,47};
+            int Min = Array[0];
+            int i=0;
+            while (i < Array.Length) {
+                if (Array[i] < Min) {
+                    Min = Array[i];
+                }
+                i = i + 1;
+            }
+            Console.WriteLine("Array Min Value : {0}",Min);
+        }
+    }
+}

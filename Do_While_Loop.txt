@@ -1,0 +1,24 @@
+using System;
+
+namespace Do_While_Loop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int j = 1, N, Product;
+
+            Console.WriteLine("Enter the value of N : ");
+            N = Convert.ToInt16(Console.ReadLine());
+
+            do
+            {
+                Product = N * j;
+                Console.WriteLine("{0} * {1} = {2}", N, j, Product);
+                j = j + 1;
+            }
+            while (j <= 10);
+            
+        }
+    }
+}

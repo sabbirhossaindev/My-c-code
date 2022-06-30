@@ -1,0 +1,22 @@
+using System;
+
+namespace Nested_If__Statement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number;
+            Console.WriteLine("enter the value of number : ");
+            number = Convert.ToInt16(Console.ReadLine());
+
+            if (number > 30) {
+                if (number < 50) {
+                    Console.WriteLine("Condition True ! ");
+                }
+            }
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,19 @@
+using System;
+
+namespace If_Statement_Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Number;
+            Console.WriteLine("Enter the value of Number : ");
+            Number = Convert.ToInt16(Console.ReadLine());
+
+            if (Number > 50) {
+                Console.WriteLine("Number is Upper 50 ");
+            }
+            Console.ReadKey();
+        }
+    }
+}

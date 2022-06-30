@@ -1,0 +1,40 @@
+using System;
+
+namespace Mehod_Recersive_Three_Number_Max
+{
+    class Program
+    {
+        public int Three_Number_Max(int Number1, int Number2, int Number3)
+        {
+            if ((Number1 > Number2) && (Number1 > Number3)) {
+                return Number1;
+            }
+            else if ((Number2 > Number1) && (Number2 > Number3))
+            {
+                return Number2;
+            }
+            else {
+                return Number3;
+            }
+        }
+        static void Main(string[] args)
+        {
+            int Num1, Num2, Num3, Largest;
+            Console.WriteLine("Enter the value of Number 1 : ");
+            Num1 = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Enter the value of Number 2 : ");
+            Num2 = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Enter the value of Number 3 : ");
+            Num3 = Convert.ToInt16(Console.ReadLine());
+
+            Program Max = new  Program();
+            Largest = Max.Three_Number_Max (Num1,Num2,Num3);
+            Console.WriteLine("Largest Number is : {0}",Largest);
+
+            Console.ReadKey();
+
+        }
+    }
+}

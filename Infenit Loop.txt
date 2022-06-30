@@ -1,0 +1,14 @@
+using System;
+
+namespace Infenit_Loop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (; ; ) {
+                Console.Write("I Love You ......!");
+            }
+        }
+    }
+}

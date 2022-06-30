@@ -1,0 +1,26 @@
+using System;
+
+namespace Array_Acending
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Tamp;
+            int[] Ten_Array = new int[] { 20,10,50,40,60,80,36,55,77,19};
+            for (int i = 0; i < Ten_Array.Length; i++) {
+                for (int j = i + 1; j < Ten_Array.Length; j++) {
+                    if (Ten_Array[i] > Ten_Array[j]) {
+                        Tamp = Ten_Array[i];
+                        Ten_Array[i] = Ten_Array[j];
+                        Ten_Array[j] = Tamp;
+                    }
+                }
+            }
+            for (int k = 0; k < Ten_Array.Length; k++) {
+                Console.WriteLine(Ten_Array[k]);
+            }
+            
+        }
+    }
+}

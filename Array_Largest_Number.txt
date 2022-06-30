@@ -1,0 +1,20 @@
+using System;
+
+namespace Array_Largest_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] My_Array = new int[] { 10,20,30,50,40,150,80,7,56,74};
+            int Max = My_Array[0];
+            for (int i = 0; i < My_Array.Length; i++) {
+                if (My_Array[i] > Max) {
+                    Max = My_Array[i];
+                }
+            }
+           
+            Console.WriteLine("My_Array Max Value is : {0}",Max);
+        }
+    }
+}

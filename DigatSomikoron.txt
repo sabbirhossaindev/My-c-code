@@ -1,0 +1,37 @@
+using System;
+
+namespace Degath_Somikoron
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the Frist Number : ");
+            Double A = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter the Secound Number : ");
+            Double B = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter the Third Number : ");
+            Double C = Convert.ToDouble(Console.ReadLine());
+
+            Double a = 0;
+            Double b = 0;
+
+            Double D = B * B - 4 * A * C;
+            if (D > 0) {
+                a = (-B + Math.Sqrt(D)) / 2;
+                b = (-B - Math.Sqrt(D)) / 2;
+                Console.WriteLine("The Root Is : {0} {1}",a,b);
+            }
+            else if (D == 0)
+            {
+                a = -B / 2 * A;
+                Console.WriteLine("The Root Is : {0}", a);
+            }
+            else {
+                Console.WriteLine("The Root Is a Not Possible !!!!!!!!");
+            }
+        }
+    }
+}

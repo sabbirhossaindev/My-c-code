@@ -1,0 +1,28 @@
+using System;
+
+namespace Nested_If_Else_Statement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Age;
+            char Name;
+            long MY_Name = "MD. Jahirul Islam Swadhin" ;
+
+            Console.WriteLine("enter Your Age : ");
+            Age = Convert.ToLong(Console.ReadLine());
+
+            if (Age >= 18) {
+                Console.WriteLine("What Is Your Name? ");
+                Name = Convert.ToChar(Console.ReadLine());
+                if (Name == MY_Name)
+                {
+                    Console.WriteLine("Your Age Is :{}\nYour Name Is : {1}", Age, Name);
+                }
+                else { 
+                    Console.WriteLine("Your Age is : {0}\Sorry Name Dos not Match", Age);                }
+            }
+        }
+    }
+}

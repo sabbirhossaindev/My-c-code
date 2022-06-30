@@ -1,0 +1,30 @@
+using System;
+
+namespace Factrioal_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Number,Fact = 1;
+            Console.WriteLine("Enter the value of Number : ");
+            Number = Convert.ToInt16(Console.ReadLine());
+
+            if (Number < 0) {
+                Console.WriteLine("Factorial Number Dos Not Possitive Number !!!");
+            }
+            else if ((Number == 0) && (Number == 1))
+            {
+                Console.WriteLine("Factorial is a : 1");
+            }
+            else {
+                int i = 2;
+                while (i <= Number) {
+                    Fact = Fact * i;
+                    i++;
+                }
+            }
+            Console.WriteLine("Factorial Is : {0}",Fact);
+        }
+    }
+}

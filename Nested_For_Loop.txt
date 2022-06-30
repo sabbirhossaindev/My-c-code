@@ -1,0 +1,17 @@
+using System;
+
+namespace Nested_For_Loop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int J = 1; J <= 3; J++) {
+                for (int k = 1; k <= 3; k++) {
+                    Console.WriteLine("{0} --->>> {1}",J,k);
+                }
+            }
+            
+        }
+    }
+}

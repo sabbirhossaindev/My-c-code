@@ -1,0 +1,20 @@
+using System;
+
+namespace SeriseOfNumber
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            int n = Convert.ToInt32(Console.ReadLine());
+            // jodi n sonkok na hoy tola uper er lin ta hoba  na.
+
+            for (i = 5; i <= n; i = i + 5)
+            {
+                Console.WriteLine("The Serise Of Number: " + i);
+            }
+            Console.ReadLine();
+        }
+    }
+}

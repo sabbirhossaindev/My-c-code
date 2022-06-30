@@ -1,0 +1,26 @@
+using System;
+
+namespace Array_Decnding
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Tamp;
+            int[] Array = new int[] { 10,50,20,30,80,40,60,70,90,80};
+            for (int i = 0; i < Array.Length; i++) {
+                for (int j = i + 1; j < Array.Length; j++) {
+                    if (Array[j] > Array[i]) {
+                        Tamp = Array[i];
+                        Array[i] = Array[j];
+                        Array[j] = Tamp;
+                    }
+                }
+            }
+            for (int i = 0; i < Array.Length; i++) {
+                Console.Write("{0} ", Array[i]);
+            }
+            Console.WriteLine();
+        }
+    }
+}

@@ -1,0 +1,18 @@
+using System;
+
+namespace _1_To_100_Even_Number_Sum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1, Sum = 0;
+            for (; i <= 100; i++) {
+                if (i % 2 != 0) {
+                    Sum = Sum + i;
+                }
+            }
+            Console.WriteLine("1 to 100 Even Number Total Sum : {0}", Sum);
+        }
+    }
+}
